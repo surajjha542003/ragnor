@@ -1,0 +1,284 @@
+/* Motion layer: existing colours, dimensions and responsive layouts remain in App.css. */
+:root {
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --navigation-height: 94px;
+}
+html {
+  scroll-padding-top: calc(var(--navigation-height) + 20px);
+}
+:where(a, button, input, textarea, select, summary, h1, h2, h3) {
+  scroll-margin-top: calc(var(--navigation-height) + 20px);
+}
+.navigation-shell {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.site-header {
+  transition:
+    background-color 300ms ease,
+    box-shadow 300ms ease;
+}
+.is-scrolled .site-header {
+  background-color: rgba(247, 246, 242, 0.98);
+  box-shadow: 0 5px 18px #24251f08;
+}
+.desktop-nav a {
+  position: relative;
+}
+.desktop-nav a.active {
+  box-shadow: none;
+}
+.desktop-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms var(--ease-editorial);
+}
+.desktop-nav a.active::after,
+.desktop-nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+.hero-copy h1,
+.section-heading h2 {
+  text-wrap: balance;
+}
+.hero-copy p {
+  text-wrap: pretty;
+}
+.button,
+.icon-button,
+.product-arrow,
+.text-link,
+.sizes button,
+.swatches button,
+.garment-options button,
+.artwork-options button,
+.suggestions button,
+.studio-tabs button,
+.filter-tabs button,
+.prompt-form button {
+  transition:
+    transform 250ms var(--ease-editorial),
+    background-color 250ms ease,
+    color 250ms ease,
+    border-color 250ms ease,
+    opacity 250ms ease;
+}
+.button > svg,
+.text-link > svg,
+.product-arrow > svg,
+.mobile-nav a > svg {
+  transition: transform 300ms var(--ease-editorial);
+}
+.button:not(:disabled):active,
+.icon-button:active,
+.prompt-form button:active {
+  transform: scale(0.98);
+}
+.product-image .garment,
+.design-card .garment {
+  transition: transform 550ms var(--ease-editorial);
+}
+.product-tag {
+  line-height: 1.5;
+}
+.product-card h3 {
+  letter-spacing: -0.15px;
+}
+.product-card:focus-visible .product-arrow {
+  transform: translateY(-3px);
+}
+.swatches button {
+  position: relative;
+}
+.swatches button.selected {
+  transform: scale(1.07);
+}
+/* A small persistent mark supplements colour and the existing selected ring. */
+.swatches button.selected::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f7f6f2;
+  box-shadow: 0 0 0 1px #24251f;
+  transform: translate(-50%, -50%);
+}
+.preview-garment {
+  width: 100%;
+  max-width: 580px;
+}
+.preview-garment > .garment {
+  max-height: 540px;
+}
+.preview-garment .garment-fabric {
+  transition: fill 300ms ease;
+}
+.preview-garment .garment-artwork {
+  transition: fill 300ms ease;
+}
+.detail-art {
+  top: calc(var(--navigation-height) + 20px);
+}
+.loading-state {
+  color: #6b6d63;
+  font-size: 13px;
+  letter-spacing: 0.15px;
+}
+.loading-state .spinner {
+  color: #ae4b2c;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .desktop-nav a:hover::after {
+    transform: scaleX(1);
+  }
+  .product-card:hover .garment,
+  .design-card:hover .garment {
+    transform: scale(1.03);
+  }
+  .product-card:hover .product-arrow {
+    transform: translateY(-3px);
+  }
+  .button:not(:disabled):hover > svg,
+  .text-link:hover > svg,
+  .mobile-nav a:hover > svg {
+    transform: translateX(3px);
+  }
+  .swatches button:not(.selected):hover {
+    transform: scale(1.07);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-entrance > * {
+    animation: editorial-enter 600ms var(--ease-editorial) both;
+  }
+  .hero-entrance > h1 {
+    animation-delay: 60ms;
+  }
+  .hero-entrance > p {
+    animation-delay: 120ms;
+  }
+  .hero-entrance > .hero-buttons {
+    animation-delay: 180ms;
+  }
+  .hero-visual > img {
+    animation: campaign-image-enter 650ms var(--ease-editorial) both;
+  }
+  .hero-image-top,
+  .hero-image-bottom {
+    animation: editorial-enter 550ms var(--ease-editorial) 100ms both;
+  }
+  .toast,
+  .empty-state,
+  .loading-state {
+    animation: editorial-enter 300ms var(--ease-editorial) both;
+  }
+}
+@keyframes editorial-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes campaign-image-enter {
+  from {
+    opacity: 0.65;
+    transform: scale(1.025);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --navigation-height: 78px;
+  }
+  .mobile-nav {
+    position: absolute;
+    inset: 100% 0 auto;
+    max-height: calc(100dvh - var(--navigation-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    box-shadow: 0 12px 22px #24251f0d;
+    visibility: hidden;
+    pointer-events: none;
+    transition: visibility 0s 300ms;
+  }
+  .mobile-nav[data-open='true'] {
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+  .preview-garment > .garment {
+    max-height: 455px;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .studio-panel.mobile-active {
+      animation: editorial-enter 300ms var(--ease-editorial) both;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .preview-garment > .garment {
+    max-height: 380px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-card:hover .garment,
+  .design-card:hover .garment,
+  .product-card:hover .product-arrow,
+  .product-card:focus-visible .product-arrow,
+  .button:not(:disabled):hover > svg,
+  .text-link:hover > svg,
+  .mobile-nav a:hover > svg,
+  .button:not(:disabled):active,
+  .icon-button:active,
+  .prompt-form button:active,
+  .swatches button.selected,
+  .swatches button:not(.selected):hover {
+    transform: none;
+  }
+  .mobile-nav {
+    transition-delay: 0s;
+  }
+  .spinner {
+    animation: none;
+  }
+}
+
+/* Match the photographic frame without replacing existing concept artwork. */
+.product-card {
+  min-width: 0;
+}
+.product-card .product-image {
+  aspect-ratio: 4 / 5;
+}
+.product-card .product-image .garment {
+  width: 91%;
+  max-height: 100%;
+}
+.product-card .product-image:focus-visible {
+  outline-offset: -5px;
+}
+.product-card h3 {
+  overflow-wrap: anywhere;
+}
+.product-card > div > span {
+  font-variant-numeric: tabular-nums;
+}

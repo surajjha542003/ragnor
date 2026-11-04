@@ -1,0 +1,101 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "outputs": [
+    {
+      "product": "north-sea",
+      "view": "front",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. bone white oversized crew-neck T-shirt, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment front ghost-mannequin photograph, no person, hanger or visible mannequin. Entire garment and sleeves visible with 10% margins. Smooth chest area.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-156327b9-0a5f-4d62-8c2d-03bcd5592bcf.png"
+    },
+    {
+      "product": "north-sea",
+      "view": "back",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. bone white oversized crew-neck T-shirt, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment BACK ghost-mannequin photograph, rear neckline visible. No person or hanger. Entire garment visible with 10% margins. Broad flat center back with folds only at edges.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-d63f7db3-0183-44b1-917d-2f65a2d09588.png"
+    },
+    {
+      "product": "north-sea",
+      "view": "model",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. bone white oversized crew-neck T-shirt, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Fictional adult South Asian male fashion model aged 25, natural face, skin and body proportions. Standing squarely front-facing, arms relaxed, black plain trousers. Frame above head to mid thigh, full garment visible. Chest flat to camera for small logo overlay. Clean editorial composition.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-4274d03f-75d4-4a7b-b669-bbb8495f1427.png"
+    },
+    {
+      "product": "north-sea",
+      "view": "artwork",
+      "prompt": "Original standalone apparel back-print illustration: An original intricate Viking longship crossing stormy northern seas, finely engraved waves and sails, charcoal-black ink with subtle muted silver details. Exploration and courage. Isolated artwork on genuinely transparent background. Portrait composition. No garment, no brand logo, no letters, no text, no watermark. No copyrighted TV, character or franchise references. High-detail raster art concept, not a logo and not a print-ready production file.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-a7c70a1b-09c3-4b90-9d3d-b8cc7bcab256.png"
+    },
+    {
+      "product": "iron-saga",
+      "view": "front",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. washed charcoal oversized crew-neck T-shirt, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment front ghost-mannequin photograph, no person, hanger or visible mannequin. Entire garment and sleeves visible with 10% margins. Smooth chest area.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-3693071c-5081-4967-a313-7c1d6d092c8a.png"
+    },
+    {
+      "product": "iron-saga",
+      "view": "back",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. washed charcoal oversized crew-neck T-shirt, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment BACK ghost-mannequin photograph, rear neckline visible. No person or hanger. Entire garment visible with 10% margins. Broad flat center back with folds only at edges.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-61739502-b0f4-4547-89b7-6ee21d4a3504.png"
+    },
+    {
+      "product": "iron-saga",
+      "view": "model",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. washed charcoal oversized crew-neck T-shirt, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Fictional adult South Asian male fashion model aged 25, natural face, skin and body proportions. Standing squarely front-facing, arms relaxed, black plain trousers. Frame above head to mid thigh, full garment visible. Chest flat to camera for small logo overlay. Clean editorial composition.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-c71216a7-0ebf-4aeb-821c-1e62362cd53c.png"
+    },
+    {
+      "product": "iron-saga",
+      "view": "artwork",
+      "prompt": "Original standalone apparel back-print illustration: An original weathered circular Nordic shield, ancient metal texture, subtle interwoven Norse knotwork, distressed silver and bone ink. Strength, resilience and heritage. Isolated artwork on genuinely transparent background. Portrait composition. No garment, no brand logo, no letters, no text, no watermark. No copyrighted TV, character or franchise references. High-detail raster art concept, not a logo and not a print-ready production file.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-25991c14-2563-408f-a8ef-a02214be540d.png"
+    },
+    {
+      "product": "oathbound",
+      "view": "front",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. black oversized pullover hoodie, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment front ghost-mannequin photograph, no person, hanger or visible mannequin. Entire garment and sleeves visible with 10% margins. Smooth chest area.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-96b1966a-8e90-4ff3-b7db-f33efc23c38f.png"
+    },
+    {
+      "product": "oathbound",
+      "view": "back",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. black oversized pullover hoodie, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment BACK ghost-mannequin photograph, rear neckline visible. No person or hanger. Entire garment visible with 10% margins. Broad flat center back with folds only at edges.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-57df6f7e-d8c4-4144-b623-4cc5f09eaf5d.png"
+    },
+    {
+      "product": "oathbound",
+      "view": "model",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. black oversized pullover hoodie, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Fictional adult South Asian male fashion model aged 25, natural face, skin and body proportions. Standing squarely front-facing, arms relaxed, black plain trousers. Frame above head to mid thigh, full garment visible. Chest flat to camera for small logo overlay. Clean editorial composition.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-ef149545-f8bf-4177-b711-80b093057063.png"
+    },
+    {
+      "product": "oathbound",
+      "view": "artwork",
+      "prompt": "Original standalone apparel back-print illustration: An original dramatic detailed raven with opened wings over a muted rust-orange circular motif, bone-white and distressed silver feather engraving. Modern Nordic streetwear, loyalty and power. Isolated artwork on genuinely transparent background. Portrait composition. No garment, no brand logo, no letters, no text, no watermark. No copyrighted TV, character or franchise references. High-detail raster art concept, not a logo and not a print-ready production file.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-5e287c6c-8d03-4862-8c0f-3e3761282f8a.png"
+    },
+    {
+      "product": "kattegat-echo",
+      "view": "front",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. washed charcoal oversized pullover hoodie, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment front ghost-mannequin photograph, no person, hanger or visible mannequin. Entire garment and sleeves visible with 10% margins. Smooth chest area.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-0f051589-85bd-4634-87de-f7e223387f22.png"
+    },
+    {
+      "product": "kattegat-echo",
+      "view": "back",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. washed charcoal oversized pullover hoodie, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Straight-on full garment BACK ghost-mannequin photograph, rear neckline visible. No person or hanger. Entire garment visible with 10% margins. Broad flat center back with folds only at edges.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-12e338a4-0df1-4d04-a5a9-8516b10312d0.png"
+    },
+    {
+      "product": "kattegat-echo",
+      "view": "model",
+      "prompt": "Photorealistic premium Indian streetwear ecommerce concept. Portrait 4:5. Warm neutral light-grey seamless studio backdrop, soft large key light upper left, gentle shadows. washed charcoal oversized pullover hoodie, dropped shoulders, relaxed boxy silhouette, realistic natural fabric texture and seams. No graphics, NO LOGOS, NO TEXT, no watermark. Leave chest/back completely blank for exact artwork compositing. No manufacturing specification claims. Fictional adult South Asian male fashion model aged 25, natural face, skin and body proportions. Standing squarely front-facing, arms relaxed, black plain trousers. Frame above head to mid thigh, full garment visible. Chest flat to camera for small logo overlay. Clean editorial composition.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-58b10c13-6f7e-4bac-8d1b-3990e44739a5.png"
+    },
+    {
+      "product": "kattegat-echo",
+      "view": "artwork",
+      "prompt": "Original standalone apparel back-print illustration: An original cinematic Viking longship passing a stormy northern coastline, intricate cliffs, sea spray and cloud engraving, silver and bone ink. Mysterious northern landscapes and exploration. Isolated artwork on genuinely transparent background. Portrait composition. No garment, no brand logo, no letters, no text, no watermark. No copyrighted TV, character or franchise references. High-detail raster art concept, not a logo and not a print-ready production file.",
+      "path": "C:\\Users\\simon\\.codex\\generated_images\\01a1a353-807c-75e0-a43b-81fd21ba3b70\\exec-a5305cc0-d30b-4670-b78b-b5c301558319.png"
+    }
+  ]
+}

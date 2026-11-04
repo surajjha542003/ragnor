@@ -1,0 +1,279 @@
+/* Official Raven Sigil identity. Layout, fonts, breakpoints and motion remain in their existing files. */
+:root {
+  --brand-black: #0b0b0b;
+  --brand-charcoal: #1e1e1e;
+  --brand-bone: #e8e4da;
+  --brand-silver: #9a9a9a;
+  --brand-rust: #cb5a3c;
+  --brand-muted: color-mix(in srgb, var(--brand-charcoal) 65%, var(--brand-bone));
+  --brand-line: color-mix(in srgb, var(--brand-charcoal) 18%, var(--brand-bone));
+  --brand-soft: color-mix(in srgb, var(--brand-charcoal) 5%, var(--brand-bone));
+  --color-orange: var(--brand-rust);
+  --color-ink: var(--brand-black);
+  color: var(--brand-black);
+  background: var(--brand-bone);
+}
+.wordmark {
+  align-items: center;
+  flex-shrink: 0;
+}
+.brand-logo {
+  display: block;
+  width: 184px;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+.footer .brand-logo {
+  width: 200px;
+}
+.site-header,
+.skip-link,
+.product-arrow {
+  background: var(--brand-bone);
+  color: var(--brand-black);
+}
+.is-scrolled .site-header {
+  background: var(--brand-bone);
+}
+.announcement,
+.footer {
+  background: var(--brand-black);
+  color: var(--brand-bone);
+}
+.mobile-nav,
+.brand-strip,
+.newsletter,
+.order-summary,
+.bag-count {
+  background: var(--brand-soft);
+}
+.product-image,
+.detail-art,
+.cart-art,
+.saved-preview {
+  background: var(--brand-soft);
+}
+.hero-copy h1 em,
+.section-heading h2 em,
+.philosophy h2 em,
+.hero-copy p,
+.hero-bottom,
+.page-intro p,
+.muted,
+.sample-note,
+.newsletter p,
+.philosophy p,
+.info-card p,
+.about-story p,
+.cart-item p,
+.order-summary p,
+.loading-state {
+  color: var(--brand-muted);
+}
+.site-header,
+.shop-toolbar,
+details,
+.info-card,
+.cart-item,
+.philosophy,
+.admin-table > div,
+.account-links a,
+.checkout-steps li {
+  border-color: var(--brand-line);
+}
+.button-dark,
+.filter-tabs .selected,
+.sizes button.selected {
+  background: var(--brand-black);
+  color: var(--brand-bone);
+}
+.button-dark:hover {
+  background: var(--brand-charcoal);
+}
+.button-accent,
+.prefooter,
+.prompt-form button {
+  background: var(--brand-rust);
+  color: var(--brand-black);
+}
+.button-accent:hover {
+  background: color-mix(in srgb, var(--brand-rust) 88%, var(--brand-bone));
+}
+.button-outline {
+  border-color: var(--brand-silver);
+}
+.button-outline:hover,
+.button-ghost:hover {
+  background: var(--brand-soft);
+}
+.tiny-dot {
+  background: var(--brand-rust);
+}
+.orange,
+.brand-strip span:nth-child(even),
+.loading-state .spinner,
+.info-card > svg,
+.studio-logo > svg {
+  color: var(--brand-rust);
+}
+.text-link:hover {
+  color: color-mix(in srgb, var(--brand-rust) 78%, var(--brand-black));
+}
+input,
+textarea,
+select {
+  border-color: var(--brand-line);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--brand-muted);
+}
+input[type='range'] {
+  accent-color: var(--brand-rust);
+}
+input:focus,
+textarea:focus {
+  border-color: var(--brand-rust);
+}
+:is(a, button, input, select, textarea, summary):focus-visible {
+  outline-color: var(--brand-rust);
+}
+::selection {
+  background: var(--brand-rust);
+  color: var(--brand-black);
+}
+.swatches button {
+  border-color: var(--brand-bone);
+}
+.swatches button.selected {
+  outline-color: var(--brand-rust);
+}
+.swatches button.selected::after {
+  background: var(--brand-bone);
+  box-shadow: 0 0 0 1px var(--brand-black);
+}
+.footer p,
+.footer .eyebrow,
+.footer-bottom,
+.footer-badge {
+  color: var(--brand-silver);
+}
+.footer nav {
+  color: var(--brand-bone);
+}
+.footer-bottom,
+.footer-badge {
+  border-color: var(--brand-charcoal);
+}
+.forge-feature,
+.forge-page,
+.toast {
+  background: var(--brand-charcoal);
+  color: var(--brand-bone);
+}
+.forge-feature-art {
+  background: var(--brand-black);
+}
+.forge-feature-copy > p,
+.forge-steps p,
+.forge-feature-art > .eyebrow,
+.art-caption,
+.forge-steps > div > span {
+  color: var(--brand-silver);
+}
+.forge-feature-copy h2 em,
+.floating-prompt {
+  color: var(--brand-bone);
+}
+.floating-prompt {
+  background: var(--brand-charcoal);
+}
+.forge-orbit,
+.forge-orbit::after,
+.forge-steps > div > span {
+  border-color: color-mix(in srgb, var(--brand-silver) 25%, transparent);
+}
+.studio-notice,
+.studio-tabs,
+.chat-message.you,
+.options-body > input:not([type='range']) {
+  background: var(--brand-black);
+}
+.studio-preview {
+  background: var(--brand-soft);
+  color: var(--brand-black);
+}
+.preview-top,
+.preview-description p,
+.preview-description > span {
+  color: var(--brand-muted);
+}
+.studio-header p,
+.studio-notice,
+.studio-beta,
+.studio-chat .muted,
+.studio-options .muted,
+.chat-message p,
+.suggestions > .eyebrow,
+.prompt-form label,
+.prompt-form > div > span,
+.studio-options .demo-disclaimer {
+  color: var(--brand-silver);
+}
+.chat-message > span {
+  color: var(--brand-rust);
+}
+.chat-message.you > span,
+.suggestions button {
+  color: var(--brand-bone);
+}
+.studio-chat,
+.studio-options,
+.studio-notice,
+.studio-tabs,
+.panel-heading,
+.studio-beta,
+.suggestions button,
+.prompt-form,
+.garment-options button,
+.artwork-options button,
+.studio-options .sizes button,
+.options-body > input:not([type='range']) {
+  border-color: color-mix(in srgb, var(--brand-silver) 35%, var(--brand-charcoal));
+}
+.studio-options .swatches button {
+  border-color: var(--brand-charcoal);
+}
+.studio-options .swatches button.selected {
+  outline-color: var(--brand-rust);
+}
+.garment-options .selected,
+.artwork-options .selected,
+.suggestions button:hover {
+  border-color: var(--brand-rust);
+  background: var(--brand-black);
+  color: var(--brand-bone);
+}
+.studio-options .sizes .selected {
+  background: var(--brand-bone);
+  color: var(--brand-black);
+}
+.studio-tabs [aria-selected='true'] {
+  border-color: var(--brand-rust);
+  color: var(--brand-bone);
+}
+.studio-options input::placeholder,
+.prompt-form textarea::placeholder {
+  color: var(--brand-silver);
+}
+@media (max-width: 800px) {
+  .brand-logo {
+    width: 148px;
+  }
+}
+@media (max-width: 380px) {
+  .site-header .brand-logo {
+    width: 112px;
+  }
+}

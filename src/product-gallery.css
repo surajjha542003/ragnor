@@ -1,0 +1,268 @@
+.product-gallery {
+  width: 100%;
+  min-width: 0;
+}
+.gallery-stage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--brand-soft);
+}
+.gallery-picture,
+.gallery-photo,
+.gallery-fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery-picture {
+  display: block;
+}
+.gallery-picture:focus-visible {
+  outline-offset: -5px;
+  z-index: 2;
+}
+.gallery-photo {
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0;
+  transition:
+    opacity 450ms ease,
+    transform 600ms var(--ease-editorial);
+}
+.gallery-photo.is-active {
+  opacity: 1;
+}
+.gallery-fallback {
+  display: grid;
+  place-items: center;
+}
+.gallery-fallback .garment {
+  width: 90%;
+}
+.gallery-disclosure {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 5px 8px;
+  background: var(--brand-bone);
+  color: var(--brand-black);
+  font-size: 8px;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+.gallery-status {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  padding: 6px 10px;
+  background: var(--brand-bone);
+  color: var(--brand-black);
+  text-align: center;
+  font-size: 10px;
+  pointer-events: none;
+}
+.gallery-thumbnails {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: var(--brand-bone);
+}
+.gallery-thumbnails button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: 1px solid var(--brand-line);
+  font-size: 11px;
+  flex: 1;
+  text-align: left;
+}
+.gallery-thumbnails button[aria-pressed='true'] {
+  border-color: var(--brand-black);
+}
+.gallery-thumbnails img {
+  width: 42px;
+  height: 54px;
+  object-fit: cover;
+}
+.detail-art.detail-gallery {
+  padding: 0;
+  background: transparent;
+}
+.gallery-note {
+  font-size: 11px;
+  color: var(--brand-muted);
+  padding: 15px;
+  line-height: 1.7;
+}
+.cart-art > .cart-model-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+@media (hover: hover) and (pointer: fine) {
+  .product-gallery:hover .gallery-photo {
+    transform: scale(1.015);
+  }
+}
+@media (max-width: 600px) {
+  .gallery-disclosure {
+    top: 8px;
+    left: 8px;
+    font-size: 6px;
+    letter-spacing: 0.5px;
+    padding: 4px 5px;
+  }
+  .gallery-thumbnails {
+    gap: 8px;
+    padding: 12px 0;
+  }
+  .gallery-thumbnails button {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery-photo {
+    transition: none;
+  }
+  .product-gallery:hover .gallery-photo {
+    transform: none;
+  }
+}
+
+.gallery-thumbnails {
+  flex-wrap: wrap;
+}
+.gallery-thumbnails button {
+  min-width: 100px;
+}
+.gallery-thumbnails .garment {
+  width: 42px;
+  height: 54px;
+  flex-shrink: 0;
+}
+.gallery-fallback .garment-fabric {
+  transition: fill 300ms ease;
+}
+.studio-show-preview {
+  display: none;
+}
+@media (max-width: 800px) {
+  .studio-show-preview {
+    display: inline-flex;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery-fallback .garment-fabric {
+    transition: none;
+  }
+}
+
+.collection-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+.collection-switch a {
+  padding-block: 8px;
+  border-bottom: 1px solid transparent;
+}
+.collection-switch a[aria-current='page'] {
+  border-color: currentColor;
+}
+.pending-photography {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 24px;
+  text-align: center;
+  background: var(--brand-soft);
+}
+.pending-photography p {
+  font-size: 14px;
+}
+
+/* First Saga: quiet editorial framing, with the complete concept in view. */
+.saga-intro {
+  border-top: 1px solid var(--brand-line);
+  padding-top: clamp(28px, 5vw, 64px);
+  max-width: 920px;
+}
+.saga-intro h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(38px, 7vw, 88px);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: 0.045em;
+  text-wrap: balance;
+  margin-block: 22px;
+}
+.saga-intro h1 em {
+  display: block;
+  font-style: normal;
+  letter-spacing: 0.14em;
+}
+.saga-intro > p {
+  max-width: 590px;
+  line-height: 1.8;
+}
+.saga-intro .saga-preview-note {
+  font-size: 11px;
+  margin-top: 24px;
+  color: var(--brand-muted);
+}
+.first-saga-gallery .gallery-photo {
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+  transition: opacity 350ms ease;
+}
+.first-saga-gallery .gallery-disclosure {
+  font-size: 9px;
+  max-width: calc(100% - 24px);
+  line-height: 1.5;
+}
+.saga-view-label {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 5px 8px;
+  background: var(--brand-bone);
+  color: var(--brand-black);
+  font-size: 10px;
+  pointer-events: none;
+}
+.saga-view-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-top: 8px;
+  border-bottom: 1px solid var(--brand-line);
+}
+.saga-view-controls button {
+  flex: 1;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px;
+  font-size: 11px;
+  color: var(--brand-muted);
+  border-bottom: 2px solid transparent;
+}
+.saga-view-controls button[aria-pressed='true'] {
+  color: var(--brand-black);
+  border-bottom-color: currentColor;
+}
+.saga-view-controls button:focus-visible {
+  outline: 2px solid var(--brand-black);
+  outline-offset: -3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .first-saga-gallery .gallery-photo { transition: none; }
+}

@@ -1,0 +1,30 @@
+import type { ButtonHTMLAttributes } from 'react'
+import { Slot } from '@radix-ui/react-slot'
+import { cva, type VariantProps } from 'class-variance-authority'
+import { cn } from '../../lib/utils'
+const variants = cva(
+  'button inline-flex items-center justify-center gap-3 text-sm font-medium transition-colors disabled:opacity-40 disabled:cursor-not-allowed',
+  {
+    variants: {
+      variant: {
+        default: 'button-dark',
+        outline: 'button-outline',
+        accent: 'button-accent',
+        ghost: 'button-ghost',
+      },
+    },
+    defaultVariants: { variant: 'default' },
+  },
+)
+export function Button({
+  asChild = false,
+  variant,
+  className,
+  ...props
+}: ButtonHTMLAttributes<HTMLButtonElement> &
+  VariantProps<typeof variants> & {
+    asChild?: boolean
+  }) {
+  const Component = asChild ? Slot : 'button'
+  return <Component className={cn(variants({ variant }), className)} {...props} />
+}
